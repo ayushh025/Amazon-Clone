@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
-    border: border-box;/* Border will be count inside element, border will be embedded within height and width */
+    box-sizing: border-box;
 }
 .navbar{
     height: 60px;
@@ -16,21 +16,21 @@
 .nav_logo{
     width: 110px;
     height: 50px;
+    padding: 0px !important;
 }
 .logo{
-    background-image: url("file:///D:/WEB/css/amazon/Images/logo.jpg");
-    /* Use browser's URL first check on browswer.. */
+    background-image: url("Images/logo.jpg");
     background-size: cover;
     height: 50px;
     width: 110px;
 }
 .border{
-    border: 1px solid transparent;  /* pehla aavu krvathi image move nai thay hover krvathi */
+    border: 1px solid transparent;
+    padding: 8px; 
 }
 .border:hover{
     border: 1px solid white;
 }
-/**Box-2**/
 #stmt{
     font-size: 0.85rem;
     color: #cccccc;
@@ -68,7 +68,6 @@
 }
 .search_input{
     border: none;
-    outline: none;
     width: 100%;
     font-size: 1rem;
 }
@@ -127,7 +126,7 @@
 }
 /**main section**/
 .hero_section{
-    background-image: url('file:///D:/WEB/css/amazon/Images/hero_image.jpg');
+    background-image: url('Images/hero_image.jpg');
     background-size: cover;
     width: 100%;
     height: 50vh;
@@ -166,7 +165,7 @@ a{
 
 }
 .box1_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box1_image.jpg');
+    background-image: url('Images/box1_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -178,7 +177,7 @@ a{
     margin-right: 1rem;
 }
 .box2_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box2_image.jpg');
+    background-image: url('Images/box2_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -186,7 +185,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box3_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box3_image.jpg');
+    background-image: url('Images/box3_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -194,7 +193,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box4_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box4_image.jpg');
+    background-image: url('Images/box4_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -202,7 +201,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box5_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box5_image.jpg');
+    background-image: url('Images/box5_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -210,7 +209,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box6_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box6_image.jpg');
+    background-image: url('Images/box6_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -218,7 +217,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box7_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box7_image.jpg');
+    background-image: url('Images/box7_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -226,7 +225,7 @@ a{
     margin-bottom: 1.25rem;
 }
 .box8_image{
-    background-image: url('file:///D:/WEB/css/amazon/Images/box8_image.jpg');
+    background-image: url('Images/box8_image.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     height: 303px;
@@ -290,8 +289,7 @@ hr{
     align-items: center;
 }
 .footer_logo{
-    background-image: url("file:///D:/WEB/css/amazon/Images/logo.jpg");
-    /* Use browser's URL first check on browswer.. */
+    background-image: url("Images/logo.jpg");
     background-size: cover;
     height: 50px;
     width: 110px;
